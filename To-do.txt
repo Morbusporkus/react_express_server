@@ -1,0 +1,3 @@
+Now that I have the basic layout (i guess)
+
+I would like to see how I can use react.js hooks to call outside scripts. (maybe see if I can call apis from my own server?)

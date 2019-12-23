@@ -1,0 +1,61 @@
+So, the basics in react is to have a server running the frontend (react.js) and a server running the backend (express). 
+
+The tutorial I found was a good crash course in how to link each of them together. So, my next bet it to see if I can set up the my node-postgress
+and integrate that into the react.js.
+
+My work flow is as follows:
+
+1. send the GeoJSON to the front end.
+2. Find out how to get leaflet to popup on my react.js
+
+For react.js it seems that you can not have multipe divs inside each component, huh
+
+From what it looks like, I think I can build react around a leaflet map, using the index.html
+	so there might be a way to add full leaflet api functionality by just in corperating it to the component file?
+ON THE TERMS OF HOW TO DO THAT: HOOKS
+
+useState: is a hook
+	it is called inside a function component to add some local state to it.
+	it is preserved between renders
+	it returns the CURRENT state value and a function that lets you update it.
+	can be called from an event handler or somewhere else.
+	Similar to a this.setState in a class but does not merge old and new states.
+	only argument to useState is the intial state. 
+	----------------------------------------------------------------------------
+	Code example: (for mutltiple state hooks)
+	function ExampleWithManyStates(){
+		const [age, setAge] = useState(42)
+		const [fruit, setFruit] = useState('banana')
+		const [todos, setTodos] = useState([{text: 'Learn Hooks'}]);
+
+
+	}
+	*NOTE* javascript destructuring lets you unpack values from an arry or objects into distinct varialbes which is like [red,green, blue]= foo
+		This is mostly used for convience.
+	the array destruvitng syntax lets us give different names to the state of varaibles that are declared in the useState
+	ss
+	
+What is a Hook? (THEY REPLACES CLASSES)
+	they let you "hook" into the React State and lifecycle features. 
+	Don't work inside classes. 
+	they let you use react without classes (interesting)
+	you can also create your own hooks to resuse stateful behavior between different components.
+	can't use them inside classes!!!
+
+Built in react hooks:
+-------------------------------------------------
+Effect Hook useEffect:  allows one to perform side effects from a function component
+			same purpose as componentDidMount, componentDidUpdated and componentWillUnmount in react classes
+		
+
+MORE NOTE:
+	Do Hooks cover all use cases for classes?
+Our goal is for Hooks to cover all use cases for classes as soon as possible. There are no Hook equivalents to the uncommon getSnapshotBeforeUpdate and componentDidCatch lifecycles yet, but we plan to add them soon.
+
+It is an early time for Hooks, and some third-party libraries might not be compatible with Hooks at the moment.
+
+
+
+		
+
+	
