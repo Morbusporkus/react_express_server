@@ -1,0 +1,36 @@
+/* so it seems like the best practice is to set the color is the components CSS and the mess with the div for each in the App*/
+
+.App {
+  text-align: center;
+  background: red;
+  width: 800px;
+  height:100%;
+}
+
+.App > .sidebar{
+  background: pink;
+  position: relative;
+  float: left;
+  height: 600px;
+  width: 80px;
+}
+.App > .map{
+  
+  background: purple;
+  position: relative;
+  float: center;
+  width: 1000px;
+  height: 650px;
+  left: 275px;
+  }
+
+.App > .sidebar_right{
+  background: black;
+  position: relative;
+  float: right;
+  height:600px;
+  left: 719px;
+}
+
+
+
