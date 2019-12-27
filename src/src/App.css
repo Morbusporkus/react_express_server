@@ -1,0 +1,41 @@
+/* so it seems like the best practice is to set the color is the components CSS and the mess with the div for each in the App*/
+.App{
+  
+  height:850px;
+  width: 1920px;
+}
+
+header{
+  background:rgb(61, 57, 57);
+  
+  padding-left:650px;
+
+}
+
+.App > .row1{
+  background: pink;
+  position: relative;
+  float: left;
+  height: 850px;
+  width: 80px;
+}
+.App > .row2{
+  
+  position: relative;
+  float: left;
+  height: 850px;
+  width: 1101px;
+}
+.App > .row3{
+  background: purple;
+  position:relative;
+  float: left;
+  height:850px;
+  width: 80px;
+}
+p{
+  color: gray;
+}
+
+
+
