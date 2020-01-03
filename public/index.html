@@ -28,32 +28,27 @@
     
     <title>Hole in the wall</title>
   </head>
-  <header>Header</header>
-  <nav>this is the nav</nav>
+  
   <body id = 'foo'>
-    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     
-    <div id="root"></div>
-    
- 
-    
+    <div className = 'app' id="root"></div>
   
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-crossorigin=""></script>
   </body>
   
+  
   <script>
-    const mymap = L.map('mapid').setView([51.505, -0.09], 13);
-    const Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {
-  attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  subdomains: 'abcd',
-  minZoom: 0,
-  maxZoom: 40,
-  ext: 'png'
- 
-  }).addTo(mymap);
+    // NOTE something that I found out. I need to have full leaflet capabilites, so I am gonna build react.js around that
+    const mymap = L.map("mapid").setView([51.505, -0.09], 13);
+   const Stamen_Toner = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}{r}.{ext}', {
+ attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+ subdomains: 'abcd',
+ minZoom: 0,
+ maxZoom: 40,
+ ext: 'png'
+
+ }).addTo(mymap);
+    
   </script>
   
 </html>

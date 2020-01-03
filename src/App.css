@@ -1,36 +1,37 @@
+/* NOTE: set posti
 /* so it seems like the best practice is to set the color is the components CSS and the mess with the div for each in the App*/
-
-.App {
-  text-align: center;
-  background: red;
-  width: 800px;
-  height:100%;
-}
-
-.App > .sidebar{
-  background: pink;
+.App{
   position: relative;
-  float: left;
-  height: 600px;
-  width: 80px;
+  background: cornsilk;
+/*   background-image: url('./components/homepage/background/blurb.jpg');
+  background-repeat: no-repeat;
+  background-size: 1920px; */
+  bottom:20px;
+  height:1000px;
+  width: 100%;
 }
-.App > .map{
+.App > .nav{
+  position: absolute;
+  bottom: 92%;
   
-  background: purple;
-  position: relative;
-  float: center;
-  width: 1000px;
-  height: 650px;
-  left: 275px;
-  }
-
-.App > .sidebar_right{
-  background: black;
-  position: relative;
-  float: right;
-  height:600px;
-  left: 719px;
+  width: 100%;
+ 
 }
+
+
+.App > .swipe{
+  
+  position: absolute;
+  background: black;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+
+
+
+
 
 
 
